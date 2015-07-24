@@ -1,0 +1,46 @@
+{namespace nw=Netweiser\Fontawesomeplus\ViewHelpers}
+
+<div class="activeFontZipfiles">
+	<f:if condition="{zipFiles}">
+		<f:then>
+			<h3>
+				<f:translate key="LLL:EXT:fontawesomeplus/Resources/Private/Language/locallang_be_module.xlf:showFont.createdZipfiles" />
+				<strong>{activeFont.title}</strong> 
+				(<f:count>{zipFiles}</f:count>)				 
+			</h3>
+
+			<div class="">
+				<table id="ziplist" class="iconlist display table table-striped table-condensed table-hover">
+					<thead>
+						<tr>
+							<th><f:translate key="LLL:EXT:fontawesomeplus/Resources/Private/Language/locallang_be_module.xlf:showSingleFont.actions" /></th>
+							<th><f:translate key="LLL:EXT:fontawesomeplus/Resources/Private/Language/locallang_be_module.xlf:showSingleFont.zipfilename" /></th>			
+						</tr>
+					</thead>
+					<tbody>
+						<f:for each="{zipFiles}" as="zipFile" reverse="true" >					
+							<tr>
+								<td>
+									<div class="btn-group" role="group">
+										<f:link.action class="btn btn-default" action="deleteZipfile" arguments="{filename: zipFile,uid:activeFontUid}" title="{f:translate(key: 'LLL:EXT:fontawesomeplus/Resources/Private/Language/locallang_be_module.xlf:actions.deleteZip')}">
+											<span class="t3-icon fa fa-trash-o"> </span>
+										</f:link.action>
+										<f:link.external class="btn btn-default" uri="{fontWebpath}{zipFile}" title="{f:translate(key: 'LLL:EXT:fontawesomeplus/Resources/Private/Language/locallang_be_module.xlf:actions.downloadZip')}">
+											<span class="t3-icon fa fa-download"> </span>
+										</f:link.external>
+									</div>
+								</td>
+								<td>
+									{zipFile}
+								</td>
+							</tr>
+						</f:for>
+					</tbody>	
+				</table>
+			</div>
+		</f:then>
+		<f:else>
+			<f:translate key="LLL:EXT:fontawesomeplus/Resources/Private/Language/locallang_be_module.xlf:showSingleFont.noZip" />
+		</f:else>
+	</f:if>
+</div>

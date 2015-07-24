@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" product-name="fontawesomeplus">
+		<header/>
+		<body>
+			<trans-unit id="extconf.pathToPython" xml:space="preserve">
+				<source>Path to your Python script</source>
+				<target state="translated">Pfad zu Python</target>
+			</trans-unit>
+			<trans-unit id="mlang_tabs_tab" xml:space="preserve">
+				<source>Font Awesome Plus</source>
+				<target state="translated">Font Awesome Plus</target>
+			</trans-unit>
+			<trans-unit id="mlang_tabs_tab" xml:space="preserve">
+				<source>Font Awesome Plus</source>
+				<target state="translated">Font Awesome Plus</target>
+			</trans-unit>
+			<trans-unit id="mlang_labels_tablabel" xml:space="preserve">
+				<source>Extend Font Awesome with your SVG Icons</source>
+				<target state="translated">Erweitert Fon Awesome um eigene SVG Vectorgrafiken</target>
+			</trans-unit>
+			<trans-unit id="mlang_labels_tabdescr" xml:space="preserve">
+				<source>Extend Font Awesome with your SVG Icons</source>
+				<target state="translated">Erweitert Fon Awesome um eigene SVG Vectorgrafiken</target>
+			</trans-unit>
+			<trans-unit id="record.newFont" xml:space="preserve">
+				<source>Create new Font Record</source>
+				<target state="translated">Neuen Schriftartdatensatz erstellen</target>
+			</trans-unit>
+			<trans-unit id="record.testPythonModules" xml:space="preserve">
+				<source>Test Python Environment</source>
+				<target state="translated">Python testen</target>
+			</trans-unit>
+			<trans-unit id="actions.edit" xml:space="preserve">
+				<source>Edit Font. Add Icons</source>
+				<target state="translated">Schrift bearbeiten. Icons hinzufügen</target>
+			</trans-unit>
+			<trans-unit id="actions.viewIcons" xml:space="preserve">
+				<source>View Icons of this Font</source>
+				<target state="translated">Zeige alle neuen Icons</target>
+			</trans-unit>
+			<trans-unit id="actions.create" xml:space="preserve">
+				<source>Create Font</source>
+				<target state="translated">Erstelle Schriftart</target>
+			</trans-unit>
+			<trans-unit id="actions.deleteZip" xml:space="preserve">
+				<source>delete ZIP file</source>
+				<target state="translated">Lösche ZIP Datei</target>
+			</trans-unit>
+			<trans-unit id="actions.downloadZip" xml:space="preserve">
+				<source>download ZIP file</source>
+				<target state="translated">lade ZIP Datei herunter</target>
+			</trans-unit>
+			<trans-unit id="actions.viewZip" xml:space="preserve">
+				<source>Show created Archives of this Font</source>
+				<target state="translated">Zeige alle erstellten Archive</target>
+			</trans-unit>
+			<trans-unit id="showFont.header" xml:space="preserve">
+				<source>Fonts</source>
+				<target state="translated">Schriftarten</target>
+			</trans-unit>
+			<trans-unit id="showFont.actions" xml:space="preserve">
+				<source>Actions</source>
+				<target state="translated">Aktionen</target>
+			</trans-unit>
+			<trans-unit id="showFont.title" xml:space="preserve">
+				<source>Title</source>
+				<target state="translated">Titel</target>
+			</trans-unit>
+			<trans-unit id="showFont.version" xml:space="preserve">
+				<source>Version</source>
+				<target state="translated">Version</target>
+			</trans-unit>
+			<trans-unit id="showFont.lastEdit" xml:space="preserve">
+				<source>last Edit</source>
+				<target state="translated">letzte Bearbeitung</target>
+			</trans-unit>
+			<trans-unit id="showFont.description" xml:space="preserve">
+				<source>Description</source>
+				<target state="translated">Beschreibung</target>
+			</trans-unit>
+			<trans-unit id="showFont.destination" xml:space="preserve">
+				<source>Destination (relative to fileadmin/)</source>
+				<target state="translated">Zielverzeichnis (relativ zu fileadmin/)</target>
+			</trans-unit>
+			<trans-unit id="showFont.addedIconsHeader" xml:space="preserve">
+				<source>added Icons to Font</source>
+				<target state="translated">hinzugefügte Icons zur Schriftart</target>
+			</trans-unit>
+			<trans-unit id="showFont.createdZipfiles" xml:space="preserve">
+				<source>created ZIP Files</source>
+				<target state="translated">erstellte Zip Dateien</target>
+			</trans-unit>
+			<trans-unit id="showSingleFont.actions" xml:space="preserve">
+				<source>Actions</source>
+				<target state="translated">Aktionen</target>
+			</trans-unit>
+			<trans-unit id="showSingleFont.image" xml:space="preserve">
+				<source>Image</source>
+				<target state="translated">Bilddatei</target>
+			</trans-unit>
+			<trans-unit id="showSingleFont.classname" xml:space="preserve">
+				<source>Classname</source>
+				<target state="translated">name der CSS Klasse</target>
+			</trans-unit>
+			<trans-unit id="showSingleFont.usagebefore" xml:space="preserve">
+				<source>Usage</source>
+				<target state="translated">Benutzung</target>
+			</trans-unit>
+			<trans-unit id="showSingleFont.zipfilename" xml:space="preserve">
+				<source>Filename</source>
+				<target state="translated">Dateiname</target>
+			</trans-unit>
+			<trans-unit id="showSingleFont.noZip" xml:space="preserve">
+				<source>There are no ZIP Files available</source>
+				<target state="translated">Es sind keine Zip Dateien verfügbar</target>
+			</trans-unit>
+			<trans-unit id="error.creatingFont.body" xml:space="preserve">
+				<source>something went wrong. See Feedback from Script:</source>
+				<target state="translated">es ist etwas schiefgegangen. Eventuell hilft dir das weiter:</target>
+			</trans-unit>
+			<trans-unit id="error.creatingFont.title" xml:space="preserve">
+				<source>Error!</source>
+				<target state="translated">Fehler</target>
+			</trans-unit>
+			<trans-unit id="ok.creatingFont.body" xml:space="preserve">
+				<source>Your new iconfont is created. Please visit the destination in your filesystem.</source>
+				<target state="translated">Die neue Schriftart wurde erstellt. Bitte schauen Sie in das angegebene Verzeichnis</target>
+			</trans-unit>
+			<trans-unit id="ok.creatingFont.title" xml:space="preserve">
+				<source>Success!</source>
+				<target state="translated">Erfolg!</target>
+			</trans-unit>
+			<trans-unit id="error.noFont.body" xml:space="preserve">
+				<source>You have selected a page where there is no font record. Please select another page or create one</source>
+				<target state="translated">Es wurde eine Seite ohne Schriftdatensatz ausgewählt. Bitte wählen Sie eine andere Seite oder erstellen eine Schriftart</target>
+			</trans-unit>
+			<trans-unit id="error.noFont.title" xml:space="preserve">
+				<source>No Font in selected page!</source>
+				<target state="translated">Keine Schriftart in ausgewählter Seite</target>
+			</trans-unit>
+			<trans-unit id="error.pythonVersion.body" xml:space="preserve">
+				<source>Python is not available. Please contact your Systemadministrator or change the path in Extensionmanager</source>
+				<target state="translated">Python steht nicht zur Verfügung. Bitte wenden Sie sich an Ihren Systemadministrator oder korrigieren Sie den Pfad im Extensionmanager</target>
+			</trans-unit>
+			<trans-unit id="message.pythonVersion.title" xml:space="preserve">
+				<source>Python Version</source>
+				<target state="translated">Python Version</target>
+			</trans-unit>
+			<trans-unit id="error.pythonModuleFontforge.body" xml:space="preserve">
+				<source>The Module is not available. Please contact your Systemadministrator or install the module yourself</source>
+				<target state="translated">Das Modul steht nicht zur Verfügung. Bitte wenden Sie sich an Ihren Systemadministrator oder installen es selbst</target>
+			</trans-unit>
+			<trans-unit id="message.pythonModuleFontforge.title" xml:space="preserve">
+				<source>Python Module Fontforge</source>
+				<target state="translated">Python Module Fontforge</target>
+			</trans-unit>
+			<trans-unit id="ok.pythonModuleJson.body" xml:space="preserve">
+				<source>The Module is available!</source>
+				<target state="translated">Das Modul steht zur Verfügung!</target>
+			</trans-unit>
+			<trans-unit id="error.pythonModuleJson.body" xml:space="preserve">
+				<source>The Module is not available. Please contact your Systemadministrator.</source>
+				<target state="translated">Das Modul steht nicht zur Verfügung. Bitte wenden Sie sich an Ihren Systemadministrator</target>
+			</trans-unit>
+			<trans-unit id="message.pythonModuleJson.title" xml:space="preserve">
+				<source>Python Module JSON</source>
+				<target state="translated">Python Module JSON</target>
+			</trans-unit>
+			<trans-unit id="ok.deleteZip.body" xml:space="preserve">
+				<source>The File has been successfully deleted!</source>
+				<target state="translated">Die Datei wurde erfolgreich gelöscht!</target>
+			</trans-unit>
+			<trans-unit id="error.deleteZip.body" xml:space="preserve">
+				<source>There has been an error deleting that file!</source>
+				<target state="translated">Es gab einen Fehler beim Löschen der Datei!</target>
+			</trans-unit>
+			<trans-unit id="message.deleteZip.title" xml:space="preserve">
+				<source>Deletion of ZIP file</source>
+				<target state="translated">Löschen der Zip Datei</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

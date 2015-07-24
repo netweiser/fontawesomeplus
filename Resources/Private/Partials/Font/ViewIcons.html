@@ -1,0 +1,35 @@
+{namespace nw=Netweiser\Fontawesomeplus\ViewHelpers}
+
+<div class="activeFont">				
+	<h3>
+		<f:translate key="LLL:EXT:fontawesomeplus/Resources/Private/Language/locallang_be_module.xlf:showFont.addedIconsHeader" /> 
+		<strong>{activeFont.title}</strong> 
+		(<f:count>{activeFont.icons}</f:count>)
+	</h3>
+	<div class="">
+		<table id="iconlist" class="iconlist display table table-striped table-condensed table-hover">
+			<thead>
+				<tr>
+					<th><f:translate key="LLL:EXT:fontawesomeplus/Resources/Private/Language/locallang_be_module.xlf:showSingleFont.image" /></th>
+					<th><f:translate key="LLL:EXT:fontawesomeplus/Resources/Private/Language/locallang_be_module.xlf:showSingleFont.classname" /></th>
+					<th><f:translate key="LLL:EXT:fontawesomeplus/Resources/Private/Language/locallang_be_module.xlf:showSingleFont.usagebefore" /></th>				
+				</tr>
+			</thead>
+			<tbody>
+				<f:for each="{activeFont.icons}" as="icon">
+					<tr>
+						<td>
+							<f:image src="{icon.uid}" treatIdAsReference="1" title="{icon.originalResource.properties.tx_fontawesomeplus_classname}" alt="{icon.originalResource.properties.tx_fontawesomeplus_classname}" maxWidth="30" maxHeight="30" />
+						</td>
+						<td>
+							{icon.originalResource.properties.tx_fontawesomeplus_classname}
+						</td>
+						<td>
+							<code>fa fa-{icon.originalResource.properties.tx_fontawesomeplus_classname}</code>
+						</td>
+					</tr>
+				</f:for>
+			</tbody>	
+		</table>
+	</div>
+</div>

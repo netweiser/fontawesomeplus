@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-04-02T03:22:25Z" product-name="fontawesomeplus">
+		<header/>
+		<body>
+			<trans-unit id="extconf.pathToPython" xml:space="preserve">
+            	<source>Path to your Python script</source>
+            </trans-unit>
+			<trans-unit id="extconf.pathToPython" xml:space="preserve">
+				<source>Font Awesome Plus</source>
+			</trans-unit>
+			<trans-unit id="mlang_labels_tablabel" xml:space="preserve">
+				<source>Extend Font Awesome with your SVG Icons</source>
+			</trans-unit>
+			<trans-unit id="mlang_labels_tabdescr" xml:space="preserve">
+				<source>Extend Font Awesome with your SVG Icons</source>
+			</trans-unit>
+			<trans-unit id="record.newFont" xml:space="preserve">
+				<source>Create new Font Record</source>
+			</trans-unit>
+			<trans-unit id="record.testPythonModules" xml:space="preserve">
+				<source>Test Python Environment</source>
+			</trans-unit>
+			<trans-unit id="actions.edit" xml:space="preserve">
+				<source>Edit Font. Add Icons</source>
+			</trans-unit>
+			<trans-unit id="actions.viewIcons" xml:space="preserve">
+				<source>View Icons of this Font</source>
+			</trans-unit>
+			<trans-unit id="actions.create" xml:space="preserve">
+				<source>Create Font</source>
+			</trans-unit>
+			<trans-unit id="actions.deleteZip" xml:space="preserve">
+				<source>delete ZIP file</source>
+			</trans-unit>
+			<trans-unit id="actions.downloadZip" xml:space="preserve">
+				<source>download ZIP file</source>
+			</trans-unit>
+			<trans-unit id="actions.viewZip" xml:space="preserve">
+				<source>Show created Archives of this Font</source>
+			</trans-unit>
+			<trans-unit id="showFont.header" xml:space="preserve">
+				<source>Fonts</source>
+			</trans-unit>
+			<trans-unit id="showFont.actions" xml:space="preserve">
+				<source>Actions</source>
+			</trans-unit>
+			<trans-unit id="showFont.title" xml:space="preserve">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="showFont.version" xml:space="preserve">
+				<source>Version</source>
+			</trans-unit>
+			<trans-unit id="showFont.lastEdit" xml:space="preserve">
+				<source>last Edit</source>
+			</trans-unit>
+			<trans-unit id="showFont.description" xml:space="preserve">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="showFont.destination" xml:space="preserve">
+				<source>Destination (relative to fileadmin/)</source>
+			</trans-unit>
+			<trans-unit id="showFont.addedIconsHeader" xml:space="preserve">
+				<source>added Icons to Font</source>
+			</trans-unit>
+			<trans-unit id="showFont.createdZipfiles" xml:space="preserve">
+				<source>created ZIP Files</source>
+			</trans-unit>
+			<trans-unit id="showSingleFont.actions" xml:space="preserve">
+				<source>Actions</source>
+			</trans-unit>
+			<trans-unit id="showSingleFont.image" xml:space="preserve">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="showSingleFont.classname" xml:space="preserve">
+				<source>Classname</source>
+			</trans-unit>
+			<trans-unit id="showSingleFont.usagebefore" xml:space="preserve">
+				<source>Usage</source>
+			</trans-unit>
+			<trans-unit id="showSingleFont.zipfilename" xml:space="preserve">
+				<source>Filename</source>
+			</trans-unit>
+			<trans-unit id="showSingleFont.noZip" xml:space="preserve">
+				<source>There are no ZIP Files available</source>
+			</trans-unit>
+			<trans-unit id="error.creatingFont.body" xml:space="preserve">
+				<source>something went wrong. See Feedback from Script:</source>
+			</trans-unit>
+			<trans-unit id="error.creatingFont.title" xml:space="preserve">
+				<source>Error!</source>
+			</trans-unit>
+			<trans-unit id="ok.creatingFont.body" xml:space="preserve">
+				<source>Your new iconfont is created. Please visit the destination in your filesystem.</source>
+			</trans-unit>
+			<trans-unit id="ok.creatingFont.title" xml:space="preserve">
+				<source>Success!</source>
+			</trans-unit>
+			<trans-unit id="error.noFont.body" xml:space="preserve">
+				<source>You have selected a page where there is no font record. Please select another page or create one</source>
+			</trans-unit>
+			<trans-unit id="error.noFont.title" xml:space="preserve">
+				<source>No Font in selected page!</source>
+			</trans-unit>
+			<trans-unit id="error.pythonVersion.body" xml:space="preserve">
+				<source>Python is not available. Please contact your Systemadministrator or change the path in Extensionmanager</source>
+			</trans-unit>
+			<trans-unit id="message.pythonVersion.title" xml:space="preserve">
+				<source>Python Version</source>
+			</trans-unit>
+			<trans-unit id="error.pythonModuleFontforge.body" xml:space="preserve">
+				<source>The Module is not available. Please contact your Systemadministrator or change the path in Extensionmanager</source>
+			</trans-unit>
+			<trans-unit id="message.pythonModuleFontforge.title" xml:space="preserve">
+				<source>Python Module Fontforge</source>
+			</trans-unit>
+			<trans-unit id="ok.pythonModuleJson.body" xml:space="preserve">
+				<source>The Module is available!</source>
+			</trans-unit>
+			<trans-unit id="error.pythonModuleJson.body" xml:space="preserve">
+				<source>The Module is not available. Please contact your Systemadministrator.</source>
+			</trans-unit>
+			<trans-unit id="message.pythonModuleJson.title" xml:space="preserve">
+				<source>Python Module JSON</source>
+			</trans-unit>
+			<trans-unit id="ok.deleteZip.body" xml:space="preserve">
+				<source>The File has been successfully deleted!</source>
+			</trans-unit>
+			<trans-unit id="error.deleteZip.body" xml:space="preserve">
+				<source>There has been an error deleting that file!</source>
+			</trans-unit>
+			<trans-unit id="message.deleteZip.title" xml:space="preserve">
+				<source>Deletion of ZIP file</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

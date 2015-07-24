@@ -1,0 +1,4 @@
+# Backend modules
+###########################
+# cat=backend modules/enable/10; type=string; label=LLL:EXT:fontawesomeplus/Resources/Private/Language/locallang_be_module.xlf:extconf.pathToPython
+pathToPython = python

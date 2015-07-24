@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-04-02T03:22:25Z" product-name="fontawesomeplus">
+		<header/>
+		<body>
+			<trans-unit id="tx_fontawesomeplus_domain_model_font" xml:space="preserve">
+				<source>Font Awesome Plus Font</source>
+			</trans-unit>
+			<trans-unit id="sys_file_reference.classname" xml:space="preserve">
+				<source>Classname (only suffix)</source>
+			</trans-unit>
+			<trans-unit id="tx_fontawesomeplus_domain_model_font.tabs.iconset" xml:space="preserve">
+				<source>Iconset</source>
+			</trans-unit>
+			<trans-unit id="tx_fontawesomeplus_domain_model_font.palettes.basic" xml:space="preserve">
+				<source>Basic</source>
+			</trans-unit>
+			<trans-unit id="tx_fontawesomeplus_domain_model_font.palettes.icons" xml:space="preserve">
+				<source>Icons</source>
+			</trans-unit>
+			<trans-unit id="tx_fontawesomeplus_domain_model_font.title" xml:space="preserve">
+				<source>Font Name</source>
+			</trans-unit>
+			<trans-unit id="tx_fontawesomeplus_domain_model_font.version" xml:space="preserve">
+				<source>Version</source>
+			</trans-unit>
+			<trans-unit id="tx_fontawesomeplus_domain_model_font.version" xml:space="preserve">
+				<source>Version</source>
+			</trans-unit>
+			<trans-unit id="tx_fontawesomeplus_domain_model_font.description" xml:space="preserve">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_fontawesomeplus_domain_model_font.destination" xml:space="preserve">
+				<source>Destination Folder (must exist!)</source>
+			</trans-unit>
+			<trans-unit id="tx_fontawesomeplus_domain_model_font.icon" xml:space="preserve">
+				<source>Icon</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,15 @@
+/* FONT PATH
+ * -------------------------- */
+
+@font-face {
+  font-family: 'Typo3backend';
+  src: url('#{$fa-font-path}/typo3backend.eot?v=#{$fa-version}');
+  src: url('#{$fa-font-path}/typo3backend.eot?#iefix&v=#{$fa-version}') format('embedded-opentype'),
+    url('#{$fa-font-path}/typo3backend.woff2?v=#{$fa-version}') format('woff2'),
+    url('#{$fa-font-path}/typo3backend.woff?v=#{$fa-version}') format('woff'),
+    url('#{$fa-font-path}/typo3backend.ttf?v=#{$fa-version}') format('truetype'),
+    url('#{$fa-font-path}/typo3backend.svg?v=#{$fa-version}#typo3backendregular') format('svg');
+//  src: url('#{$fa-font-path}/Typo3backend.otf') format('opentype'); // used when developing fonts
+  font-weight: normal;
+  font-style: normal;
+}

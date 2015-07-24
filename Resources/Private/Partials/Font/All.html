@@ -1,0 +1,53 @@
+{namespace nw=Netweiser\Fontawesomeplus\ViewHelpers}
+
+<div class="table-responsible">
+	<table id="fontlist" class="display table table-striped table-hover">
+		<thead>
+			<tr>
+				<th><f:translate key="LLL:EXT:fontawesomeplus/Resources/Private/Language/locallang_be_module.xlf:showFont.actions" /></th>
+				<th><f:translate key="LLL:EXT:fontawesomeplus/Resources/Private/Language/locallang_be_module.xlf:showFont.title" /></th>
+				<th><f:translate key="LLL:EXT:fontawesomeplus/Resources/Private/Language/locallang_be_module.xlf:showFont.version" /></th>
+				<th><f:translate key="LLL:EXT:fontawesomeplus/Resources/Private/Language/locallang_be_module.xlf:showFont.lastEdit" /></th>
+				<th><f:translate key="LLL:EXT:fontawesomeplus/Resources/Private/Language/locallang_be_module.xlf:showFont.description" /></th>				
+				<th><f:translate key="LLL:EXT:fontawesomeplus/Resources/Private/Language/locallang_be_module.xlf:showFont.destination" /></th>				
+			</tr>
+		</thead>
+		<tbody>
+			<f:for each="{fonts}" as="font">
+			<tr class="{f:if(condition: '{0:activeFontUid} == {0:font.uid}', then: 'active', else: '')}">
+				<td>
+					<div class="btn-group" role="group">
+						<f:link.action class="btn btn-default" action="editFont" arguments="{uid: font.uid}" title="{f:translate(key: 'LLL:EXT:fontawesomeplus/Resources/Private/Language/locallang_be_module.xlf:actions.edit')}">
+							<span class="t3-icon fa fa-pencil"> </span>
+						</f:link.action>
+						<f:link.action class="btn btn-default" action="viewIcons" arguments="{uid: font.uid}" title="{f:translate(key: 'LLL:EXT:fontawesomeplus/Resources/Private/Language/locallang_be_module.xlf:actions.viewIcons')}">
+							<span class="t3-icon fa fa-eye"> </span>
+						</f:link.action>
+						<f:link.action class="btn btn-default" action="createFont" arguments="{uid: font.uid}" title="{f:translate(key: 'LLL:EXT:fontawesomeplus/Resources/Private/Language/locallang_be_module.xlf:actions.create')}">
+							<span class="t3-icon fa fa-refresh"> </span>
+						</f:link.action>
+						<f:link.action class="btn btn-default" action="viewZipfiles" arguments="{uid: font.uid}" title="{f:translate(key: 'LLL:EXT:fontawesomeplus/Resources/Private/Language/locallang_be_module.xlf:actions.viewZip')}">
+							<span class="t3-icon fa fa-download"> </span>
+						</f:link.action>
+					</div>
+				</td>
+				<td>
+					{font.title}
+				</td>
+				<td>
+					{font.version}
+				</td>
+				<td>
+					<f:format.date date="{font.tstamp}" format="%d.%m.%Y, %H:%M" />
+				</td>
+				<td>
+					<f:format.nl2br>{font.description}</f:format.nl2br>
+				</td>
+				<td>
+					{font.destination}
+				</td>
+			</tr>
+			</f:for>
+		</tbody>	
+	</table>
+</div>

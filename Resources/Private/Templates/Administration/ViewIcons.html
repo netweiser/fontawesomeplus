@@ -1,0 +1,20 @@
+{namespace nw=Netweiser\Fontawesomeplus\ViewHelpers}
+
+<f:layout name="Backend/Default" />
+
+<f:section name="content">
+	<h1><f:translate key="LLL:EXT:fontawesomeplus/Resources/Private/Language/locallang_be_module.xlf:showFont.header" /> 
+		<f:if condition="{countfonts}">
+			({countfonts})
+		</f:if>
+	</h1>
+	<f:flashMessages renderMode="div" />
+	<f:if condition="{countfonts}">
+		<div class="allfonts">
+			<f:render partial="Font/All" arguments="{fonts:fonts,activeFontUid:activeFontUid}" />
+		</div>
+		<div class="fontview">
+			<f:render partial="Font/ViewIcons" arguments="{activeFont:activeFont}" />
+		</div>
+	</f:if>
+</f:section>
