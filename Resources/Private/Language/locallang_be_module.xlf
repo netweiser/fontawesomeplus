@@ -4,9 +4,12 @@
 		<header/>
 		<body>
 			<trans-unit id="extconf.pathToPython" xml:space="preserve">
-            	<source>Path to your Python script</source>
-            </trans-unit>
+				<source>Path to your Python script</source>
+			</trans-unit>
 			<trans-unit id="extconf.pathToPython" xml:space="preserve">
+				<source>Font Awesome Plus</source>
+			</trans-unit>
+			<trans-unit id="mlang_tabs_tab" xml:space="preserve">
 				<source>Font Awesome Plus</source>
 			</trans-unit>
 			<trans-unit id="mlang_labels_tablabel" xml:space="preserve">
@@ -107,6 +110,9 @@
 			</trans-unit>
 			<trans-unit id="message.pythonVersion.title" xml:space="preserve">
 				<source>Python Version</source>
+			</trans-unit>
+			<trans-unit id="ok.pythonModuleFontforge.body" xml:space="preserve">
+				<source>The Module is available!</source>
 			</trans-unit>
 			<trans-unit id="error.pythonModuleFontforge.body" xml:space="preserve">
 				<source>The Module is not available. Please contact your Systemadministrator or change the path in Extensionmanager</source>

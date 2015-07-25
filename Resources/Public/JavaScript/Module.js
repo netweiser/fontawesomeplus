@@ -73,7 +73,7 @@ define('Netweiser/Fontawesomeplus/Module', ['jquery', 'datatables'], function($)
 				null,
 				null
 			],
-			"aaSorting": [[2,'asc']],
+			"aaSorting": [[1,'desc']],
 			language: {
 				search:         "",
 				lengthMenu:    "_MENU_",
@@ -137,7 +137,7 @@ define('Netweiser/Fontawesomeplus/Module', ['jquery', 'datatables'], function($)
 				{ "bSortable": false },
 				null
 			],
-			"aaSorting": [[1,'asc']],
+			"aaSorting": [[1,'desc']],
 			language: {
 				search:         "",
 				lengthMenu:    "_MENU_",
