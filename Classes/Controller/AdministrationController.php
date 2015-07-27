@@ -208,8 +208,8 @@ class AdministrationController  extends \TYPO3\CMS\Extbase\Mvc\Controller\Action
 	public function deleteZipfileAction() {
 		$currentFont = $this->fontRepository->findByUid($this->request->getArgument('uid'));
 		$filename = $this->request->getArgument('filename');
-		Zip::deleteZip($currentFont,$filename);
-		
+		$result = Zip::deleteZip($currentFont,$filename);
+
 		if ($result === FALSE) {
 			$this->addFlashMessage(
 				LocalizationUtility::translate('LLL:EXT:fontawesomeplus/Resources/Private/Language/locallang_be_module.xlf:error.deleteZip.body', 'fontawesomeplus'),
