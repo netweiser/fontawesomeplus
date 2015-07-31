@@ -27,7 +27,6 @@ namespace Netweiser\Fontawesomeplus\Utility;
  ***************************************************************/
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Core\Utility\CommandUtility;
 
 /**
  * Styles Utility
@@ -37,7 +36,7 @@ use TYPO3\CMS\Core\Utility\CommandUtility;
  */
 class Styles {
 
-	const FACONTRIB = 'font-awesome-4.3.0';
+	const FACONTRIB = 'font-awesome-4.4.0';
 	const FACSS = 'font-awesome.css';
 	const LESS_CORE = 'core.less';
 	const LESS_ICONS = 'icons.less';
@@ -190,7 +189,7 @@ class Styles {
 			' *  ' . $fontName . ' Version: ' . $currentFont->getVersion() . LF .
 			' *';
 
-		$searchArray = array('fontawesome-webfont', 'FontAwesome','fontawesomeregular','License)','v=4.3.0');
+		$searchArray = array('fontawesome-webfont', 'FontAwesome','fontawesomeregular','License)','v=4.4.0');
 
 		$replaceArray = array($fontName, ucwords($fontName), $fontName . 'regular',$fontComment,'v=' . $currentFont->getVersion());
 
@@ -218,7 +217,7 @@ class Styles {
 			$buildIconsArray[$key]['class'] = $value->getReferenceProperty('tx_fontawesomeplus_classname');
 		}
 		//start with unicode f23b; fontAwesome version 4.3 first free in private use area
-		$i = hexdec('0xf23b');
+		$i = hexdec('0xf281');
 		foreach ($buildIconsArray as $key => $value) {
 			$buildIconsArray[$key]['unicode'] = dechex($i);
 			$i++;

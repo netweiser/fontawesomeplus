@@ -12,10 +12,10 @@
 
 $EM_CONF[$_EXTKEY] = array (
 	'title' => 'Font Awesome Plus',
-    'description' => 'extend "Font Awesome - The iconic font and CSS toolkit" with your own icons and create an own font with all necessary files ',
+    'description' => 'extend "Font Awesome - The iconic font and CSS toolkit" with your own icons and create an own font with all necessary files',
 	'category' => 'module',
-	'version' => '0.2.0',
-	'state' => 'beta',
+	'version' => '1.0.0',
+	'state' => 'stable',
 	'uploadfolder' => true,
 	'createDirs' => 'uploads/tx_fontawesomeplus',
 	'clearCacheOnLoad' => true,

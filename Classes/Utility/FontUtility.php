@@ -36,7 +36,7 @@ use TYPO3\CMS\Core\Utility\CommandUtility;
  * @subpackage tx_fontawesomeplus
  */
 class Font {
-
+    const FACONTRIB = 'font-awesome-4.4.0';
     /**
      * create Font via Python with FontForge
      *
@@ -58,12 +58,12 @@ class Font {
             $svgArray[$key] = PATH_site . 'fileadmin' . $value->getIdentifier();
         }
         $unicodeArray = array();
-        $i = hexdec('0xf23b');
+        $i = hexdec('0xf281');
         foreach ($svgArray as $key => $value) {
             $unicodeArray[$key] = $i .',uni'. dechex($i);
             $i++;
         }
-        $fontPath = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('fontawesomeplus') . 'Resources/Public/Contrib/font-awesome-4.3.0/fonts/fontawesome-webfont.svg';
+        $fontPath = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('fontawesomeplus') . 'Resources/Public/Contrib/'. self::FACONTRIB .'/fonts/fontawesome-webfont.svg';
         $fontForgeArray = CommandUtility::escapeShellArgument(json_encode(array_combine($svgArray, $unicodeArray),JSON_UNESCAPED_SLASHES));
         $fontName = strtolower(preg_replace(array ('/\s+/','/[^a-zA-Z0-9]/'), array ('-', ''), $currentFont->getTitle()));
         $comment = CommandUtility::escapeShellArgument(str_replace(array("\r\n", "\n", "\r"), ' ', $currentFont->getDescription()));
