@@ -24,7 +24,7 @@ $EM_CONF[$_EXTKEY] = array (
 	'author_company' => 'netweiser',
 	'constraints' => array (
 		'depends' => array (
-			'typo3' => '6.2.10-7.99.99',
+			'typo3' => '7.2.0-7.99.99',
 		),
 		'conflicts' => array (
 		),
