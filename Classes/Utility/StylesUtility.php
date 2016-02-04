@@ -36,7 +36,7 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
  */
 class Styles {
 
-	const FACONTRIB = 'font-awesome-4.4.0';
+	const FACONTRIB = 'font-awesome-4.5.0';
 	const FACSS = 'font-awesome.css';
 	const LESS_CORE = 'core.less';
 	const LESS_ICONS = 'icons.less';
@@ -189,7 +189,7 @@ class Styles {
 			' *  ' . $fontName . ' Version: ' . $currentFont->getVersion() . LF .
 			' *';
 
-		$searchArray = array('fontawesome-webfont', 'FontAwesome','fontawesomeregular','License)','v=4.4.0');
+		$searchArray = array('fontawesome-webfont', 'FontAwesome','fontawesomeregular','License)','v=4.5.0');
 
 		$replaceArray = array($fontName, ucwords($fontName), $fontName . 'regular',$fontComment,'v=' . $currentFont->getVersion());
 
@@ -216,8 +216,8 @@ class Styles {
 		foreach ($iconReferences as $key => $value) {
 			$buildIconsArray[$key]['class'] = $value->getReferenceProperty('tx_fontawesomeplus_classname');
 		}
-		//start with unicode f23b; fontAwesome version 4.3 first free in private use area
-		$i = hexdec('0xf281');
+		//start with unicode f296 fontAwesome version 4.5 first free in private use area
+		$i = hexdec('0xf296');
 		foreach ($buildIconsArray as $key => $value) {
 			$buildIconsArray[$key]['unicode'] = dechex($i);
 			$i++;
