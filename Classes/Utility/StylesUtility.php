@@ -36,7 +36,9 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
  */
 class Styles {
 
-	const FACONTRIB = 'font-awesome-4.5.0';
+	const FACONTRIB = 'font-awesome-4.6.3';
+    //start with hexadecimal first free in private use area
+    const HEXADECIMAL = '0xf2b5';
 	const FACSS = 'font-awesome.css';
 	const LESS_CORE = 'core.less';
 	const LESS_ICONS = 'icons.less';
@@ -182,7 +184,7 @@ class Styles {
 	 * @param object $currentFont
 	 * @return string
 	*/
-	protected function replaceStrings($fontName,$currentFont,$stringContent) {
+	protected static function replaceStrings($fontName,$currentFont,$stringContent) {
 		$fontComment = 	'License)' . LF .
 			' *  ' . LF .
 			' *  Extended with TYPO3 EXT:fontawesomeplus <info@netweiser.com>' . LF .
@@ -204,7 +206,7 @@ class Styles {
 	 * @param int $fontUid
 	 * @return array
 	*/
-	protected function buildIconsArray($fontUid) {
+	protected static function buildIconsArray($fontUid) {
 		/**
 		 * @var array $buildIconsArray
 		*/
@@ -216,8 +218,7 @@ class Styles {
 		foreach ($iconReferences as $key => $value) {
 			$buildIconsArray[$key]['class'] = $value->getReferenceProperty('tx_fontawesomeplus_classname');
 		}
-		//start with unicode f296 fontAwesome version 4.5 first free in private use area
-		$i = hexdec('0xf296');
+		$i = hexdec(self::HEXADECIMAL);
 		foreach ($buildIconsArray as $key => $value) {
 			$buildIconsArray[$key]['unicode'] = dechex($i);
 			$i++;

@@ -36,7 +36,10 @@ use TYPO3\CMS\Core\Utility\CommandUtility;
  * @subpackage tx_fontawesomeplus
  */
 class Font {
-    const FACONTRIB = 'font-awesome-4.5.0';
+    const FACONTRIB = 'font-awesome-4.6.3';
+    //start with hexadecimal first free in private use area
+    const HEXADECIMAL = '0xf2b5';
+
     /**
      * create Font via Python with FontForge
      *
@@ -58,7 +61,7 @@ class Font {
             $svgArray[$key] = PATH_site . 'fileadmin' . $value->getIdentifier();
         }
         $unicodeArray = array();
-        $i = hexdec('0xf296');
+        $i = hexdec(self::HEXADECIMAL);
         foreach ($svgArray as $key => $value) {
             $unicodeArray[$key] = $i .',uni'. dechex($i);
             $i++;
